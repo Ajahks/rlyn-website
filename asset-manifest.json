@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/rlyn-website/static/css/main.f855e6bc.css",
-    "main.js": "/rlyn-website/static/js/main.56089924.js",
-    "static/js/453.4251fbac.chunk.js": "/rlyn-website/static/js/453.4251fbac.chunk.js",
-    "index.html": "/rlyn-website/index.html",
-    "main.f855e6bc.css.map": "/rlyn-website/static/css/main.f855e6bc.css.map",
-    "main.56089924.js.map": "/rlyn-website/static/js/main.56089924.js.map",
-    "453.4251fbac.chunk.js.map": "/rlyn-website/static/js/453.4251fbac.chunk.js.map"
+    "main.css": "/static/css/main.f855e6bc.css",
+    "main.js": "/static/js/main.87f74d29.js",
+    "static/js/453.4251fbac.chunk.js": "/static/js/453.4251fbac.chunk.js",
+    "index.html": "/index.html",
+    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
+    "main.87f74d29.js.map": "/static/js/main.87f74d29.js.map",
+    "453.4251fbac.chunk.js.map": "/static/js/453.4251fbac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.56089924.js"
+    "static/js/main.87f74d29.js"
   ]
 }
