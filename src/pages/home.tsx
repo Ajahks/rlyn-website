@@ -1,5 +1,6 @@
 const homeStyle: React.CSSProperties = {
   backgroundColor: '#E6E8E6',
+  color: '#213547',
   borderRadius: '20px',
   paddingTop: '20px',
   paddingBottom: '20px',
