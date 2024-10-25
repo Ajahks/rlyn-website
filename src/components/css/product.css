@@ -1,0 +1,11 @@
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  background-color: #E6E8E6;
+}
+
+.product-grid {
+  margin: 10px;
+}
