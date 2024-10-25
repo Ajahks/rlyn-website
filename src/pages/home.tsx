@@ -30,7 +30,7 @@ const verticalLinksStyle: React.CSSProperties = {
 const linkStyle: React.CSSProperties = {
   color: '#907AD6',
   margin: '5px',
-  fontSize: '20px'
+  fontSize: '16px'
 };
 
 export function HomePage() {
