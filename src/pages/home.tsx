@@ -21,13 +21,28 @@ const headerStyle: React.CSSProperties = {
   margin: '10px',
 };
 
+const verticalLinksStyle: React.CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column',
+  padding: '1px',
+}
+
+const linkStyle: React.CSSProperties = {
+  color: '#907AD6',
+  margin: '5px',
+  fontSize: '20px'
+};
+
 export function HomePage() {
   return (
     <>
       <div style={ homeStyle }>
         <h1>Welcome to Rlyn's shop!</h1>
-        <p>This shop is still under construction.</p>
-        <p>For inquiries, please contact Pelagias.pride24@gmail.com</p>
+        <p>For inquiries, please contact:</p>
+        <div style={verticalLinksStyle}>
+          <a style={linkStyle} href="mailto:Pelagias.pride24@gmail.com">Pelagias.pride24@gmail.com</a>
+          <a style={linkStyle} href="tel:9255921928">925-592-1928</a>
+        </div>
       </div>
       <h2 style={headerStyle}>Products</h2>
       <ProductGrid/>
