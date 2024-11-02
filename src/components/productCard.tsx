@@ -4,16 +4,21 @@ import { Box } from '@mui/material';
 
 
 interface ProductCardProps {
-  product: Product   
+  product: Product;
+  onClick: (product: Product) => void;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({product}) => {
+const ProductCard: React.FC<ProductCardProps> = ({product, onClick}) => {
+  function handleOnClick() {
+    onClick(product)
+  }
+
   return (
-    <div className="product-card">
+    <div className="product-card" onClick={handleOnClick}>
         <h2>{product.name}</h2> 
         <Box
           component="img"
-          src={product.imageUrl}
+          src={product.productCardImg}
           sx={{
             width: '100%',
             height: '100%',

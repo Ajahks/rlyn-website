@@ -1,4 +1,7 @@
+import { useState } from "react";
 import ProductGrid from "../components/productGrid";
+import { Product } from "../types/product";
+import ProductModal from "../components/productModal";
 
 const homeStyle: React.CSSProperties = {
   backgroundColor: '#E6E8E6',
@@ -33,9 +36,23 @@ const linkStyle: React.CSSProperties = {
   fontSize: '16px'
 };
 
+
+
 export function HomePage() {
+  const [selectedProduct, selectProduct] = useState<Product|null>(null);
+
+  function handleProductClick(product: Product) {
+    // Set a variable
+    selectProduct(product);
+  }
+
+  function handleModalClose() {
+    selectProduct(null);
+  }
+
   return (
     <>
+      <ProductModal product={selectedProduct} onClose={handleModalClose}/>
       <div style={ homeStyle }>
         <h1>Welcome to Rlyn's shop!</h1>
         <p>For inquiries, please contact:</p>
@@ -45,7 +62,7 @@ export function HomePage() {
         </div>
       </div>
       <h2 style={headerStyle}>Products</h2>
-      <ProductGrid/>
+      <ProductGrid onClick={handleProductClick}/>
     </>
   );
 }
