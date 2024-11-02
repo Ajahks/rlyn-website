@@ -10,7 +10,7 @@ interface ProductGridProps {
 const sampleProducts: Product[] = [
   {
     name: "Bingo Bags", 
-    price: "Contact to for more info", 
+    price: "Contact for more info", 
     productCardImg: "/products/bingo-bag/bingo-bag-productCard.png",
     productImgs: [
       "/products/bingo-bag/bingo-bag-productCard.png",
