@@ -19,6 +19,17 @@ const sampleProducts: Product[] = [
       "/products/bingo-bag/bingo-bag3-productImg.png"
     ],
   },
+  {
+    name: "Purses", 
+    price: "Contact for more info", 
+    productCardImg: "/products/purse/purse-productCard.JPG",
+    productImgs: [
+      "/products/purse/purse-productCard.JPG",
+      "/products/purse/purse1-productImg.JPG",
+      "/products/purse/purse2-productImg.png",
+      "/products/purse/purse3-productImg.png"
+    ],
+  },
 ];
 
 const ProductGrid: React.FC<ProductGridProps> = ({onClick}) => {
