@@ -58,7 +58,7 @@ export function HomePage() {
         <p>For inquiries, please contact:</p>
         <div style={verticalLinksStyle}>
           <a style={linkStyle} href="mailto:Pelagias.pride24@gmail.com">Pelagias.pride24@gmail.com</a>
-          <a style={linkStyle} href="tel:9255921928">925-592-1928</a>
+          <a style={linkStyle} href="tel:9253545619">925-354-5619</a>
         </div>
       </div>
       <h2 style={headerStyle}>Products</h2>
