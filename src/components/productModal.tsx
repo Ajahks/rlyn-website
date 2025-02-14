@@ -29,7 +29,7 @@ const modalImageStyle = {
 
 const ProductModal: React.FC<ProductModalProps> = ({product, onClose}) => {
   return (
-    <Modal
+    <Modal className="productModal"
       open={product != null}
       onClose={onClose}
     >
@@ -38,6 +38,19 @@ const ProductModal: React.FC<ProductModalProps> = ({product, onClose}) => {
           (
             <div>
               <h1>{product.name}</h1>
+              <p>{product.longDescription}</p>
+              { product.dimensions ? (
+                <div>
+                  <h3>Dimensions</h3>
+                  {Array.from(product.dimensions).map(([dimension, value]) => {
+                    return (
+                        <p>{dimension}: {value}</p>
+                    )
+                  })}
+                </div>
+              ) : (
+                  <div></div>
+              )}
               {product.productImgs.map((img) => {
                 return ( 
                   <Box

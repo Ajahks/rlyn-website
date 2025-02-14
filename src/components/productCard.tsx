@@ -15,7 +15,9 @@ const ProductCard: React.FC<ProductCardProps> = ({product, onClick}) => {
 
   return (
     <div className="product-card" onClick={handleOnClick}>
-        <h2>{product.name}</h2> 
+        <h2>{product.name}</h2>
+        <p style={{whiteSpace: "pre-line"}}>{product.shortDescription}</p>
+        <p>{product.price}</p>
         <Box
           component="img"
           src={product.productCardImg}
@@ -26,7 +28,6 @@ const ProductCard: React.FC<ProductCardProps> = ({product, onClick}) => {
             borderRadius: 1, // Optional: rounds corners
           }}
         />
-        <p>{product.price}</p>
     </div>
   );
 };
