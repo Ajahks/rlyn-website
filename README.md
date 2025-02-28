@@ -1,6 +1,6 @@
 # Building and Deploying
 ```
-
+npx vite
 ```
 
 # React + TypeScript + Vite
